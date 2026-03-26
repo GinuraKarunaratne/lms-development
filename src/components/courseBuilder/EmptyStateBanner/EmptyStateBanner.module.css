@@ -1,28 +1,28 @@
 .banner {
-  background-color: var(--color-warning-bg);
-  border: 1px solid var(--color-warning);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
+  background-color: #fef9c3;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-3);
-  margin-top: var(--space-8);
+  gap: 12px;
+  margin-top: 32px;
 }
 
 .icon {
-  color: var(--color-warning);
+  color: #f59e0b;
 }
 
 .title {
-  font-size: var(--text-lg);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
 .description {
-  font-size: var(--text-sm);
-  color: var(--color-text-secondary);
+  font-size: 14px;
+  color: #6b6b6b;
   max-width: 400px;
 }

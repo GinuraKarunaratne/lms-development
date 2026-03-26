@@ -9,16 +9,16 @@
 
 .menu {
   position: absolute;
-  top: calc(100% + var(--space-2));
+  top: calc(100% + 8px);
   left: 0;
   min-width: 200px;
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-elevated);
-  z-index: var(--z-dropdown);
-  padding: var(--space-2) 0;
-  animation: scaleIn var(--duration-fast) var(--easing-default);
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  z-index: 300;
+  padding: 8px 0;
+  animation: scaleIn 120ms cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: top left;
 }
 
@@ -26,22 +26,22 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: var(--space-3) var(--space-4);
-  font-size: var(--text-sm);
-  color: var(--color-text-primary);
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #1a1a1a;
   background: none;
   border: none;
   cursor: pointer;
   text-align: left;
-  transition: background-color var(--duration-fast) var(--easing-default);
+  transition: background-color 120ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item:hover {
-  background-color: var(--color-bg-subtle);
+  background-color: #fafafa;
 }
 
 .item.danger {
-  color: var(--color-error);
+  color: #ef4444;
 }
 
 .item.danger:hover {

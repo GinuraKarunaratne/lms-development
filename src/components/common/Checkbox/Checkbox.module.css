@@ -1,19 +1,19 @@
 .checkbox {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: 8px;
   cursor: pointer;
 }
 
 .input {
   width: 18px;
   height: 18px;
-  accent-color: var(--color-black);
+  accent-color: #1a1a1a;
   cursor: pointer;
 }
 
 .label {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
+  font-size: 14px;
+  color: #a0a0a0;
   user-select: none;
 }

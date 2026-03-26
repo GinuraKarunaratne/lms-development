@@ -1,18 +1,18 @@
 .divider {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
-  margin: var(--space-6) 0;
+  gap: 16px;
+  margin: 24px 0;
 }
 
 .line {
   flex: 1;
   height: 1px;
-  background-color: var(--color-border);
+  background-color: #e5e5e5;
 }
 
 .label {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
+  font-size: 14px;
+  color: #a0a0a0;
   white-space: nowrap;
 }

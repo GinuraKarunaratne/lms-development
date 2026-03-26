@@ -5,9 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-accent-soft);
-  color: var(--color-text-primary);
-  font-weight: var(--font-weight-semibold);
+  background-color: #eefaba;
+  color: #1a1a1a;
+  font-weight: 600;
 }
 
 .avatar img {
@@ -19,17 +19,17 @@
 .sm {
   width: 32px;
   height: 32px;
-  font-size: var(--text-xs);
+  font-size: 12px;
 }
 
 .md {
   width: 40px;
   height: 40px;
-  font-size: var(--text-sm);
+  font-size: 14px;
 }
 
 .lg {
   width: 48px;
   height: 48px;
-  font-size: var(--text-base);
+  font-size: 16px;
 }

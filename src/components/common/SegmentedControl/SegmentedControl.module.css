@@ -1,35 +1,35 @@
 .control {
   display: inline-flex;
-  background-color: var(--color-bg-subtle);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-3xl);
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
   padding: 3px;
   gap: 2px;
 }
 
 .segment {
-  padding: 6px var(--space-5);
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-medium);
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 500;
   background: none;
   border: none;
-  border-radius: var(--radius-3xl);
+  border-radius: 20px;
   cursor: pointer;
-  color: var(--color-text-muted);
-  transition: all var(--duration-base) var(--easing-default);
+  color: #a0a0a0;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 34px;
   white-space: nowrap;
 }
 
 .segment.active {
-  color: var(--color-text-primary);
-  font-weight: var(--font-weight-semibold);
-  background-color: var(--color-bg-surface);
+  color: #1a1a1a;
+  font-weight: 600;
+  background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 .segment:not(.active):hover {
-  color: var(--color-text-secondary);
+  color: #6b6b6b;
 }
 
 .segment:disabled {

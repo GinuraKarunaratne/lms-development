@@ -25,17 +25,17 @@
 }
 
 .time {
-  font-size: var(--text-base);
+  font-size: 16px;
   color: #7f7f7f;
-  font-weight: var(--font-weight-regular);
+  font-weight: 400;
 }
 
 .typeBadge {
-  font-size: var(--text-xs);
+  font-size: 12px;
   color: #60a500;
   border: 1px solid #e8fbce;
   border-radius: 4px;
-  padding: 4px var(--space-2);
+  padding: 4px 8px;
   line-height: 1;
   white-space: nowrap;
   flex-shrink: 0;
@@ -45,14 +45,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-2);
+  gap: 8px;
 }
 
 .title {
-  font-size: var(--text-lg);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
-  line-height: var(--leading-tight);
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.2;
   flex: 1;
   min-width: 0;
   overflow: hidden;

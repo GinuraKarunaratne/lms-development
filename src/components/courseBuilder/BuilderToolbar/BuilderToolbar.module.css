@@ -2,27 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-4) 0;
-  border-bottom: 1px solid var(--color-border);
-  margin-bottom: var(--space-6);
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 24px;
   flex-wrap: wrap;
-  gap: var(--space-4);
+  gap: 16px;
 }
 
 .left {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: 16px;
 }
 
 .right {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: 12px;
 }
 
 .title {
-  font-size: var(--text-2xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
 }

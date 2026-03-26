@@ -1,35 +1,35 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
+  gap: 8px;
 }
 
 .label {
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
 }
 
 .textarea {
   width: 100%;
-  padding: var(--space-3) var(--space-4);
-  font-size: var(--text-sm);
-  color: var(--color-text-primary);
-  background-color: var(--color-bg-page);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #1a1a1a;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
   resize: vertical;
   min-height: 90px;
   font-family: inherit;
-  transition: border-color var(--duration-base) var(--easing-default);
-  line-height: var(--leading-base);
+  transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.5;
 }
 
 .textarea:focus {
   outline: none;
-  border-color: var(--color-text-primary);
+  border-color: #1a1a1a;
 }
 
 .textarea::placeholder {
-  color: var(--color-text-muted);
+  color: #a0a0a0;
 }

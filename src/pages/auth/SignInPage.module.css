@@ -6,50 +6,50 @@
 
 .title {
   font-size: 1.875rem;
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
-  margin-bottom: var(--space-2);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
   letter-spacing: -0.02em;
-  line-height: var(--leading-tight);
+  line-height: 1.2;
 }
 
 .subtitle {
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-8);
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-bottom: 32px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: 20px;
 }
 
 .formRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-4);
+  gap: 16px;
 }
 
 .forgotLink {
-  font-size: var(--text-sm);
-  color: var(--color-text-secondary);
+  font-size: 14px;
+  color: #6b6b6b;
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .forgotLink:hover {
-  color: var(--color-text-primary);
+  color: #1a1a1a;
 }
 
 .error {
-  font-size: var(--text-sm);
-  color: var(--color-error);
-  padding: var(--space-3) var(--space-4);
+  font-size: 14px;
+  color: #ef4444;
+  padding: 12px 16px;
   background-color: #fef2f2;
-  border-radius: var(--radius-md);
+  border-radius: 6px;
   border: 1px solid #fecaca;
 }
 
@@ -58,33 +58,33 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: var(--space-3) var(--space-6);
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  font-family: var(--font-family);
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
   cursor: pointer;
   min-height: 44px;
-  transition: background-color var(--duration-base) var(--easing-default);
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .instructorButton:hover {
-  background-color: var(--color-bg-subtle);
+  background-color: #fafafa;
 }
 
 .footer {
-  margin-top: var(--space-6);
+  margin-top: 24px;
   text-align: center;
-  font-size: var(--text-sm);
-  color: var(--color-text-muted);
+  font-size: 14px;
+  color: #a0a0a0;
 }
 
 .link {
-  color: var(--color-text-primary);
-  font-weight: var(--font-weight-medium);
+  color: #1a1a1a;
+  font-weight: 500;
   text-decoration: none;
 }
 
