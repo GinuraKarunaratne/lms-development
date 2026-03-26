@@ -2,7 +2,6 @@ import { useState, type FormEvent } from 'react';
 import { Modal } from '../../common/Modal/Modal';
 import { InputField } from '../../common/InputField/InputField';
 import { TextareaField } from '../../common/TextareaField/TextareaField';
-import { Button } from '../../common/Button/Button';
 import styles from './AddSectionModal.module.css';
 
 interface AddSectionModalProps {
@@ -37,11 +36,11 @@ export function AddSectionModal({ isOpen, onClose, onSave }: AddSectionModalProp
   }
 
   return (
-    <Modal isOpen={isOpen} onClose={handleClose} title="Add New Section">
+    <Modal isOpen={isOpen} onClose={handleClose} title="Add new section" subtitle="Create a new section to organize your course content">
       <form className={styles.form} onSubmit={handleSubmit}>
         <InputField
           label="Section Title"
-          placeholder="e.g. Introduction to React"
+          placeholder="Enter your title"
           value={title}
           onChange={(e) => {
             setTitle(e.target.value);
@@ -50,21 +49,21 @@ export function AddSectionModal({ isOpen, onClose, onSave }: AddSectionModalProp
           error={error}
           required
         />
-        
+
         <TextareaField
-          label="What will students learn in this section? (Optional)"
-          placeholder="Enter section description..."
+          label="Description (optional)"
+          placeholder="Enter your title"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
 
         <div className={styles.footer}>
-          <Button type="button" variant="ghost" onClick={handleClose}>
+          <button type="button" className={styles.cancelBtn} onClick={handleClose}>
             Cancel
-          </Button>
-          <Button type="submit" variant="primary">
-            Save Section
-          </Button>
+          </button>
+          <button type="submit" className={styles.submitBtn}>
+            Add section
+          </button>
         </div>
       </form>
     </Modal>

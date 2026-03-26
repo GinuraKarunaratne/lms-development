@@ -33,6 +33,7 @@ export interface Course {
 
 export interface ScheduleEntry {
   id: string;
+  dayIndex: number;
   time: string;
   title: string;
   type: string;

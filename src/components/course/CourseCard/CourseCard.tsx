@@ -19,9 +19,11 @@ export function CourseCard({ course }: CourseCardProps) {
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && navigate(`/student/courses/${course.id}`)}
     >
-      <div className={styles.thumbnail}>
-        <img src={course.thumbnail} alt={course.title} loading="lazy" />
-        <div className={styles.badge}>
+      <div
+        className={styles.thumbnail}
+        style={{ backgroundImage: `url(${course.thumbnail})` }}
+      >
+        <div className={styles.thumbnailBadge}>
           <Badge label={course.category} />
         </div>
       </div>

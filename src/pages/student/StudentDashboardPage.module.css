@@ -2,19 +2,19 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-8);
+  align-items: start;
 }
 
+/* Welcome Card */
 .welcome {
-  background: linear-gradient(to left, #e8fbce, #e8fbce);
-  border-radius: var(--radius-xl);
-  border: 1px solid #dff7be;
+  background-color: #e8fbce;
+  border-radius: var(--radius-2xl);
   padding: var(--space-6);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: var(--space-6);
-  height: 235px;
-  overflow: hidden;
+  gap: var(--space-5);
+  min-height: 260px;
+  justify-content: space-between;
 }
 
 .welcomeHeader {
@@ -26,59 +26,111 @@
 
 .welcomeGreeting {
   font-size: var(--text-sm);
-  color: #6b7280;
-  font-weight: 400;
+  color: rgba(0,0,0,0.45);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: 2px;
 }
 
 .welcomeName {
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: var(--font-weight-semibold);
   color: var(--color-text-primary);
-  margin-top: var(--space-1);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
 }
 
 .activeBadge {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: 6px;
   font-size: var(--text-xs);
-  color: #60a500;
+  font-weight: var(--font-weight-medium);
+  color: #3a6b00;
   white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 4px;
 }
 
 .activeDot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background-color: #60a500;
+  background-color: #3a6b00;
   flex-shrink: 0;
 }
 
+/* Metric Cards inside welcome */
 .metrics {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.6fr;
   gap: var(--space-3);
-  flex-wrap: nowrap;
-  align-items: stretch;
 }
 
+.metricCard {
+  background-color: #ceff8c;
+  border-radius: var(--radius-xl);
+  padding: var(--space-3);
+  position: relative;
+  min-height: 115px;
+}
+
+.metricIcon {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  color: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+}
+
+.metricLabel {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  font-size: var(--text-sm);
+  color: rgba(0,0,0,0.45);
+  white-space: nowrap;
+}
+
+.metricValue {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  font-size: 2.75rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Continue Section */
 .sectionHeader {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: var(--space-4);
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-5);
 }
 
 .sectionTitle {
   font-size: var(--text-2xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
+}
+
+.subtitleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-6);
 }
 
 .sectionSubtitle {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-  margin-top: var(--space-1);
-  max-width: 400px;
+  line-height: var(--leading-relaxed);
+  flex: 1;
 }
 
 .exploreLink {
@@ -89,87 +141,122 @@
   color: var(--color-text-muted);
   cursor: pointer;
   flex-shrink: 0;
-  margin-top: var(--space-1);
+  padding-top: 2px;
+  transition: color var(--duration-base);
+  white-space: nowrap;
+}
+
+.exploreLink:hover {
+  color: var(--color-text-primary);
 }
 
 .courseGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-6);
+  gap: var(--space-4);
 }
 
 /* Schedule Rail */
 .scheduleRail {
-  background-color: var(--color-bg-surface);
-  border-radius: var(--radius-xl);
-  padding: var(--space-6);
-  border: 1px solid var(--color-border);
+  background-color: #fbfbfb;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 
 .scheduleHeader {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: var(--space-6);
 }
 
 .scheduleTitle {
-  font-size: var(--text-xl);
+  font-size: var(--text-base);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
+  line-height: var(--leading-tight);
 }
 
 .scheduleSub {
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   color: var(--color-text-muted);
+  margin-top: 2px;
 }
 
 .calendarIcon {
-  color: var(--color-text-muted);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .weekDays {
   display: flex;
-  gap: var(--space-2);
-  margin-bottom: var(--space-6);
+  gap: var(--space-1);
 }
 
 .dayChip {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-1);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-md);
-  font-size: var(--text-xs);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-muted);
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-1);
+  border-radius: 5px;
   cursor: pointer;
   transition: all var(--duration-base) var(--easing-default);
-  min-width: 44px;
-  text-align: center;
-  border: 1px solid transparent;
+  border: 1px solid var(--color-border);
+  background-color: #f7f7f7;
 }
 
 .dayChip:hover {
-  background-color: var(--color-bg-subtle);
+  background-color: #efefef;
 }
 
 .dayChip.active {
-  background-color: var(--color-text-primary);
-  color: var(--color-white);
-  border-color: var(--color-text-primary);
+  background-color: #e8fbce;
+  border-color: #d2e6b7;
+}
+
+.dayName {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.dayChip.active .dayName {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
 }
 
 .dayNumber {
-  font-size: var(--text-base);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-muted);
+  line-height: 1;
+}
+
+.dayChip.active .dayNumber {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
 }
 
 .scheduleList {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-2);
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.emptyDay {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-8) 0;
 }
 
 @media (min-width: 768px) {
@@ -178,8 +265,26 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .layout {
-    grid-template-columns: 1fr 340px;
+    grid-template-columns: 1fr 366px;
+  }
+
+  .courseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scheduleList {
+    max-height: calc(100vh - 380px);
+  }
+}
+
+@media (max-width: 640px) {
+  .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .weekDays {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

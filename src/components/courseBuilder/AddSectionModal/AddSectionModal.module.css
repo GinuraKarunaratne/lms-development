@@ -8,5 +8,42 @@
   display: flex;
   justify-content: flex-end;
   gap: var(--space-3);
-  margin-top: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.cancelBtn {
+  padding: 0 var(--space-5);
+  min-height: 40px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: none;
+  font-family: var(--font-family);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background-color var(--duration-fast);
+}
+
+.cancelBtn:hover {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-primary);
+}
+
+.submitBtn {
+  padding: 0 var(--space-5);
+  min-height: 40px;
+  border-radius: var(--radius-lg);
+  border: none;
+  background-color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity var(--duration-fast);
+}
+
+.submitBtn:hover {
+  opacity: 0.88;
 }

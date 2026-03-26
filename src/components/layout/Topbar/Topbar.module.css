@@ -1,23 +1,25 @@
 .topbar {
   position: fixed;
   top: 0;
-  left: var(--sidebar-width);
+  left: var(--sidebar-w, var(--sidebar-width));
   right: 0;
   height: var(--topbar-height);
   background-color: var(--color-bg-surface);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--space-8);
   z-index: var(--z-topbar);
+  transition: left var(--duration-slow) var(--easing-default);
 }
 
 .left {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
   flex: 1;
-  max-width: 400px;
+  max-width: 380px;
 }
 
 .hamburger {
@@ -29,8 +31,13 @@
   cursor: pointer;
   color: var(--color-text-primary);
   padding: var(--space-2);
-  min-width: 44px;
-  min-height: 44px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: var(--radius-md);
+}
+
+.hamburger:hover {
+  background-color: var(--color-bg-subtle);
 }
 
 .right {
@@ -45,13 +52,13 @@
   align-items: center;
   justify-content: center;
   background: none;
-  border: none;
+  border: 1px solid var(--color-border);
   cursor: pointer;
   color: var(--color-text-secondary);
   padding: var(--space-2);
   border-radius: var(--radius-md);
-  min-width: 44px;
-  min-height: 44px;
+  width: 36px;
+  height: 36px;
   transition: background-color var(--duration-base) var(--easing-default);
 }
 
@@ -63,6 +70,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  cursor: pointer;
 }
 
 .userInfo {
@@ -82,11 +90,12 @@
 .userRole {
   font-size: var(--text-xs);
   color: var(--color-text-muted);
+  text-transform: capitalize;
 }
 
 @media (max-width: 1023px) {
   .topbar {
-    left: 0;
+    left: 0 !important;
     padding: 0 var(--space-4);
   }
 

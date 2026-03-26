@@ -1,26 +1,31 @@
 .control {
   display: inline-flex;
+  background-color: var(--color-bg-subtle);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-3xl);
-  overflow: hidden;
+  padding: 3px;
+  gap: 2px;
 }
 
 .segment {
-  padding: var(--space-2) var(--space-6);
+  padding: 6px var(--space-5);
   font-size: var(--text-sm);
   font-weight: var(--font-weight-medium);
   background: none;
   border: none;
+  border-radius: var(--radius-3xl);
   cursor: pointer;
   color: var(--color-text-muted);
   transition: all var(--duration-base) var(--easing-default);
-  min-height: 44px;
+  min-height: 34px;
+  white-space: nowrap;
 }
 
 .segment.active {
   color: var(--color-text-primary);
   font-weight: var(--font-weight-semibold);
   background-color: var(--color-bg-surface);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 .segment:not(.active):hover {

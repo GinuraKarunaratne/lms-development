@@ -1,16 +1,20 @@
 .page {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .title {
-  font-size: var(--text-4xl);
+  font-size: 1.875rem;
   font-weight: var(--font-weight-bold);
   color: var(--color-text-primary);
   margin-bottom: var(--space-2);
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
 }
 
 .subtitle {
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   color: var(--color-text-muted);
   margin-bottom: var(--space-8);
 }
@@ -19,24 +23,34 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
-  text-align: left;
 }
 
 .formRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-4);
 }
 
 .forgotLink {
   font-size: var(--text-sm);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .forgotLink:hover {
-  text-decoration: underline;
+  color: var(--color-text-primary);
+}
+
+.error {
+  font-size: var(--text-sm);
+  color: var(--color-error);
+  padding: var(--space-3) var(--space-4);
+  background-color: #fef2f2;
+  border-radius: var(--radius-md);
+  border: 1px solid #fecaca;
 }
 
 .instructorButton {
@@ -45,15 +59,16 @@
   justify-content: center;
   width: 100%;
   padding: var(--space-3) var(--space-6);
-  font-size: var(--text-base);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
+  font-family: var(--font-family);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
   cursor: pointer;
-  transition: background-color var(--duration-base) var(--easing-default);
   min-height: 44px;
+  transition: background-color var(--duration-base) var(--easing-default);
 }
 
 .instructorButton:hover {
@@ -61,27 +76,18 @@
 }
 
 .footer {
+  margin-top: var(--space-6);
   text-align: center;
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-  margin-top: var(--space-6);
 }
 
 .link {
   color: var(--color-text-primary);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   text-decoration: none;
 }
 
 .link:hover {
   text-decoration: underline;
-}
-
-.error {
-  color: var(--color-error);
-  font-size: var(--text-sm);
-  text-align: center;
-  padding: var(--space-3);
-  background-color: #fef2f2;
-  border-radius: var(--radius-md);
 }

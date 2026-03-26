@@ -4,9 +4,10 @@
 }
 
 .main {
-  margin-left: var(--sidebar-width);
+  margin-left: var(--sidebar-w, var(--sidebar-width));
   padding-top: var(--topbar-height);
   min-height: 100vh;
+  transition: margin-left var(--duration-slow) var(--easing-default);
 }
 
 .content {
@@ -15,7 +16,7 @@
 
 @media (max-width: 1023px) {
   .main {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 
   .content {

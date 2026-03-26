@@ -14,13 +14,21 @@ interface AppShellProps {
 
 export function AppShell({ role, userName, userRole, userAvatar, children }: AppShellProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+
+  const sidebarW = sidebarCollapsed ? 'var(--sidebar-collapsed-width)' : 'var(--sidebar-width)';
 
   return (
-    <div className={styles.shell}>
+    <div
+      className={styles.shell}
+      style={{ '--sidebar-w': sidebarW } as React.CSSProperties}
+    >
       <Sidebar
         role={role}
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
+        collapsed={sidebarCollapsed}
+        onCollapsedChange={setSidebarCollapsed}
       />
       <Topbar
         userName={userName}
