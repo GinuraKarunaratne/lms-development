@@ -1,0 +1,33 @@
+.control {
+  display: inline-flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-3xl);
+  overflow: hidden;
+}
+
+.segment {
+  padding: var(--space-2) var(--space-6);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: all var(--duration-base) var(--easing-default);
+  min-height: 44px;
+}
+
+.segment.active {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--color-bg-surface);
+}
+
+.segment:not(.active):hover {
+  color: var(--color-text-secondary);
+}
+
+.segment:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

@@ -1,0 +1,13 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.builderArea {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* We let the UI components handle most of the layout, 
+   CreateCoursePage mainly orchestrates them. */

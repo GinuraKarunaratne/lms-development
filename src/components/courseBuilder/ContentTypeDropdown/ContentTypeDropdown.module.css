@@ -1,0 +1,37 @@
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-bg-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--duration-base) var(--easing-default);
+}
+
+.trigger:hover {
+  background-color: var(--color-bg-subtle);
+  border-color: var(--color-text-muted);
+  color: var(--color-text-primary);
+}
+
+.itemLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.itemIcon {
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.itemText {
+  flex: 1;
+}

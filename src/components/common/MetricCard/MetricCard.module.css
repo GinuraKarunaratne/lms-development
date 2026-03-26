@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px 14px 12px;
+  background-color: #ceff8c;
+  border-radius: var(--radius-lg);
+  outline: 1px solid #dff7be;
+  outline-offset: -1px;
+  flex: 1;
+  min-width: 140px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card:nth-child(1),
+.card:nth-child(2) {
+  min-width: 140px;
+  flex: 0 0 140px;
+}
+
+.card:nth-child(3) {
+  flex: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60a500;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+  color: #505153;
+  font-weight: 400;
+  width: 100%;
+}
+
+.value {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1;
+  text-align: right;
+}
