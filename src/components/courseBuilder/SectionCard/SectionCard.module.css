@@ -56,7 +56,7 @@
 
 .title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #1a1a1a;
   flex: 1;
   min-width: 0;
@@ -72,7 +72,7 @@
   background-color: #eefaba;
   color: #4a7c00;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 20px;
   white-space: nowrap;
   flex-shrink: 0;

@@ -1,18 +1,18 @@
 import type { Course } from '../types/course';
 
 const THUMBNAILS = [
-  'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&h=400&fit=crop',
-  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=400&fit=crop',
 ];
 
 export const studentCourses: Course[] = [
   {
     id: 'course-1',
-    title: "Beginner's Guide to Becoming a Professional Frontend Developer",
+    title: "Beginner's Guide to Become a Professional Front-End Developer",
     description: 'Join to start learning the latest trends and steps to learn frontend development',
     category: 'Frontend',
     thumbnail: THUMBNAILS[0],
@@ -51,7 +51,7 @@ export const studentCourses: Course[] = [
   },
   {
     id: 'course-2',
-    title: "Beginner's Guide to Becoming a Professional UI/UX Designer",
+    title: "Beginner's Guide to Become a Professional UI/UX Designer",
     description: 'Join to start learning the latest trends and steps to learn frontend development',
     category: 'UI/UX Design',
     thumbnail: THUMBNAILS[1],

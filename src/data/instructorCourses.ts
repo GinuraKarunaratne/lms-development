@@ -6,7 +6,7 @@ export interface EnrollmentEntry {
 }
 
 export const instructorEnrollments: EnrollmentEntry[] = [
-  { id: 'enr-1', courseTitle: "Beginner's Guide to Becoming a Professional Front-End Developer", courseId: '#1234422', date: '12/01/2026' },
+  { id: 'enr-1', courseTitle: "Beginner's Guide to Become a Professional Front-End Developer", courseId: '#1234422', date: '12/01/2026' },
   { id: 'enr-2', courseTitle: 'UI/UX Fundamentals', courseId: '#1234422', date: '12/01/2026' },
   { id: 'enr-3', courseTitle: 'UI/UX Fundamentals', courseId: '#1234422', date: '12/01/2026' },
 ];

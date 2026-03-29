@@ -115,7 +115,7 @@
 
 .sectionTitle {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   color: #414141;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -180,7 +180,7 @@
 
 .scheduleTitle {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #414141;
   line-height: 1.2;
 }

@@ -24,7 +24,7 @@
 
 .tab.active {
   color: #1a1a1a;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .tab.active::after {
