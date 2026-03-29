@@ -19,7 +19,7 @@ const WEEK_DAYS = [
 export function StudentDashboardPage() {
   const session = getSession();
   const [activeDay, setActiveDay] = useState(0);
-  const displayCourses = studentCourses.slice(0, 2);
+  const displayCourses = studentCourses.slice(0, 4);
   const daySchedule = schedule.filter((e) => e.dayIndex === activeDay);
 
   return (
@@ -31,7 +31,7 @@ export function StudentDashboardPage() {
     >
       <div className={styles.layout}>
         {/* Left: Main content */}
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
           {/* Welcome Card */}
           <div className={styles.welcome}>
             <div className={styles.welcomeHeader}>
@@ -79,7 +79,7 @@ export function StudentDashboardPage() {
           </div>
 
           {/* Continue the journey */}
-          <div style={{ marginTop: '24px' }}>
+          <div>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>Continue the journey</h2>
               <div className={styles.subtitleRow}>

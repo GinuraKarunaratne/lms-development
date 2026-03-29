@@ -4,6 +4,9 @@ const THUMBNAILS = [
   'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop',
   'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=400&fit=crop',
   'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&h=400&fit=crop',
+  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
 ];
 
 export const studentCourses: Course[] = [
@@ -127,14 +130,67 @@ export const studentCourses: Course[] = [
   {
     id: 'course-6',
     title: "Modern DevOps Practices for Frontend Teams",
-    description: 'Join to start learning the latest trends and steps to learn frontend development',
-    category: 'Frontend',
+    description: 'Learn CI/CD pipelines, Docker containers, and automated deployment workflows used by top engineering teams.',
+    category: 'DevOps',
     thumbnail: THUMBNAILS[2],
     progress: 88,
     instructor: {
-      name: 'Martin Fransesco',
-      avatar: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Martin',
-      role: 'Mentor',
+      name: 'Sara Mitchell',
+      avatar: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Sara',
+      role: 'Senior Engineer',
+    },
+    modules: [],
+  },
+  {
+    id: 'course-7',
+    title: "Python for Data Science and Machine Learning",
+    description: 'Master Python libraries like NumPy, Pandas and Scikit-learn to build real-world data science projects.',
+    category: 'Data Science',
+    thumbnail: THUMBNAILS[3],
+    progress: 22,
+    instructor: {
+      name: 'Dr. Anika Patel',
+      avatar: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Anika',
+      role: 'Data Scientist',
+    },
+    modules: [
+      {
+        id: 'mod-5',
+        title: 'Python Fundamentals for Data',
+        subtitle: 'Module 1',
+        lessons: [
+          { id: 'lesson-17', title: 'Setting Up Python Environment', type: 'video', duration: '6 min', status: 'completed' },
+          { id: 'lesson-18', title: 'NumPy Arrays & Operations', type: 'video', duration: '10 min', status: 'current' },
+          { id: 'lesson-19', title: 'Pandas DataFrames', type: 'video', duration: '12 min', status: 'pending' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'course-8',
+    title: "Figma Advanced: Design Systems & Prototyping",
+    description: 'Build scalable design systems in Figma with components, variables, and auto-layout for production-ready workflows.',
+    category: 'UI/UX Design',
+    thumbnail: THUMBNAILS[4],
+    progress: 55,
+    instructor: {
+      name: 'Lena Voss',
+      avatar: 'https://api.dicebear.com/9.x/adventurer/svg?seed=Lena',
+      role: 'Lead Designer',
+    },
+    modules: [],
+  },
+  {
+    id: 'course-9',
+    title: "Full-Stack Development with Next.js & PostgreSQL",
+    description: 'Build complete full-stack web applications using Next.js App Router, server actions, and a PostgreSQL database.',
+    category: 'Full Stack',
+    thumbnail: THUMBNAILS[5],
+    progress: 8,
+    instructor: {
+      name: 'James Okafor',
+      avatar: 'https://api.dicebear.com/9.x/adventurer/svg?seed=James',
+      role: 'Full-Stack Lead',
     },
     modules: [],
   },

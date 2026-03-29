@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
   gap: 24px;
   align-items: start;
+  min-height: calc(100vh - 64px - 40px);
 }
 
 /* Welcome Card */
@@ -34,7 +35,7 @@
 
 .welcomeName {
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #414141;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -63,7 +64,7 @@
 /* Metric Cards inside welcome */
 .metrics {
   display: grid;
-  grid-template-columns: 140px 140px 1fr;
+  grid-template-columns: 3fr 3fr 5fr;
   gap: 12px;
 }
 
@@ -114,7 +115,7 @@
 
 .sectionTitle {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   color: #414141;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -167,6 +168,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-self: stretch;
+  height: 100%;
 }
 
 .scheduleHeader {
@@ -177,7 +180,7 @@
 
 .scheduleTitle {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: #414141;
   line-height: 1.2;
 }
@@ -252,7 +255,7 @@
   flex-direction: column;
   gap: 8px;
   overflow-y: auto;
-  max-height: 400px;
+  flex: 1;
 }
 
 .emptyDay {
@@ -272,18 +275,41 @@
   .layout {
     grid-template-columns: 1fr 366px;
     gap: 24px;
+    align-items: stretch;
   }
 
   .courseGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .scheduleList {
-    max-height: calc(100vh - 340px);
+@media (max-width: 768px) {
+  .welcomeName {
+    font-size: 1.4rem;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+
+  .metricValue {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 640px) {
+  .welcomeName {
+    font-size: 1.25rem;
+  }
+
+  .sectionTitle {
+    font-size: 18px;
+  }
+
+  .metricValue {
+    font-size: 1.75rem;
+  }
+
   .metrics {
     grid-template-columns: 1fr 1fr;
   }

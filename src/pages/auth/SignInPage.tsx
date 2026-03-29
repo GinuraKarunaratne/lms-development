@@ -41,9 +41,6 @@ export function SignInPage() {
     setPassword(INSTRUCTOR_CREDS.password);
     setAuthError('');
     setErrors({});
-
-    const error = signIn(INSTRUCTOR_CREDS.email, INSTRUCTOR_CREDS.password);
-    if (error) setAuthError(error);
   }
 
   return (

@@ -6,7 +6,7 @@
 
 .title {
   font-size: 1.875rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #1a1a1a;
   margin-bottom: 8px;
   letter-spacing: -0.02em;
@@ -90,4 +90,10 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 639px) {
+  .title {
+    font-size: 1.5rem;
+  }
 }
