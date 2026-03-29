@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams, Link, NavLink } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Avatar } from '../../components/common/Avatar/Avatar';
 import { SearchField } from '../../components/layout/SearchField/SearchField';
 import { getSession } from '../../features/auth/authStorage';

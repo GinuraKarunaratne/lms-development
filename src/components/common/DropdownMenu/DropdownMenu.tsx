@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, type ReactNode } from 'react';
+import { useRef, useEffect, type ReactNode } from 'react';
 import styles from './DropdownMenu.module.css';
 
 export interface DropdownItem {
