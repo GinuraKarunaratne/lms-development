@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import type { ContentType } from '../../../types/course';
 import styles from './ContentTypeDropdown.module.css';
 
@@ -6,7 +7,7 @@ interface ContentTypeDropdownProps {
   onSelect: (type: ContentType) => void;
 }
 
-const CONTENT_TYPES: { id: ContentType; label: string; icon: JSX.Element }[] = [
+const CONTENT_TYPES: { id: ContentType; label: string; icon: ReactNode }[] = [
   {
     id: 'video',
     label: 'Video Lesson',
