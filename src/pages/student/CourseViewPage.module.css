@@ -2,15 +2,15 @@
 .shell {
   display: flex;
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 /* LEFT: Course outline sidebar */
 .courseSidebar {
   width: 250px;
   flex-shrink: 0;
-  background-color: #ffffff;
-  border-right: 1px solid #e5e5e5;
+  background-color: #F2F2F2;
+  border-right: 1px solid #D2D2D3;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -25,22 +25,22 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 20px 16px 16px;
+  padding: 20px 20px 16px;
   flex-shrink: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #D2D2D3;
 }
 
 .brandIcon {
   width: 34px;
   height: 34px;
-  background-color: #c8e972;
+  background-color: #60A500;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 16px;
-  color: #1a1a1a;
+  color: #ffffff;
   flex-shrink: 0;
 }
 
@@ -52,7 +52,7 @@
 .brandName {
   font-size: 14px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #414141;
   line-height: 1.2;
 }
 
@@ -64,30 +64,33 @@
 .courseOutline {
   flex: 1;
   overflow-y: auto;
-  padding: 16px 16px;
+  padding: 16px 0;
 }
 
 .backLink {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   font-size: 12px;
-  color: #a0a0a0;
+  color: #979797;
   text-decoration: none;
   margin-bottom: 16px;
+  padding: 0 20px;
   transition: color 200ms;
 }
 
 .backLink:hover {
-  color: #1a1a1a;
+  color: #414141;
 }
 
 .courseTitle {
-  font-size: 16px;
-  font-weight: 600;
-  color: #1a1a1a;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+  padding: 0 20px 16px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -97,133 +100,132 @@
 .moduleList {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .moduleGroup {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .moduleHeader {
-  padding-bottom: 8px;
+  padding: 12px 20px;
+  border-top: 0.5px solid #D5D5D5;
+  border-bottom: 0.5px solid #D5D5D5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .moduleSubtitle {
   display: block;
-  font-size: 10px;
-  font-weight: 500;
-  color: #a0a0a0;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #979797;
+  margin-bottom: 6px;
 }
 
 .moduleTitle {
   font-size: 14px;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-weight: 500;
+  color: #414141;
   line-height: 1.2;
 }
 
 .lessonList {
   display: flex;
   flex-direction: column;
-  gap: 2px;
 }
 
 .lessonItem {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
-  padding: 8px 8px;
-  border-radius: 6px;
+  padding: 12px 20px;
   border: none;
   background: none;
   cursor: pointer;
   text-align: left;
   width: 100%;
   transition: background-color 200ms;
+  border-left: 2px solid transparent;
 }
 
 .lessonItem:hover {
-  background-color: #fafafa;
+  background-color: #EBEBEB;
 }
 
 .lessonActive {
-  background-color: #f0fce8;
+  background-color: #ffffff;
+  border-left-color: #99E038;
 }
 
 .lessonStatus {
   flex-shrink: 0;
-  margin-top: 2px;
   display: flex;
   align-items: center;
 }
 
 .statusCompleted {
-  color: #22c55e;
+  color: #99E038;
 }
 
 .statusCurrent {
-  color: #22c55e;
+  color: #B4B4B4;
 }
 
 .statusPending {
-  color: #d1d5db;
+  color: #B4B4B4;
 }
 
 .lessonMeta {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 6px;
   min-width: 0;
 }
 
 .lessonName {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  color: #1a1a1a;
+  color: #414141;
   line-height: 1.2;
 }
 
-.lessonActive .lessonName {
-  font-weight: 600;
-  color: #3a7a00;
-}
-
 .lessonDuration {
-  font-size: 10px;
-  color: #a0a0a0;
+  font-size: 12px;
+  color: #979797;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .sidebarFooter {
-  padding: 12px 12px;
-  border-top: 1px solid #e5e5e5;
+  padding: 8px 10px;
+  border-top: 1px solid #D2D2D3;
   flex-shrink: 0;
 }
 
 .logoutBtn {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
+  gap: 10px;
+  padding: 8px 10px;
   width: 100%;
   border-radius: 6px;
   border: none;
   background: none;
   cursor: pointer;
-  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 500;
-  color: #6b6b6b;
+  color: #787878;
   transition: all 200ms;
 }
 
 .logoutBtn:hover {
-  background-color: #fafafa;
-  color: #1a1a1a;
+  background-color: #EBEBEB;
+  color: #414141;
 }
 
 /* RIGHT: main area */
@@ -240,12 +242,12 @@
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 0.5px solid #D2D2D3;
   height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
+  padding: 0 20px;
   z-index: 200;
 }
 
@@ -266,15 +268,16 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(80, 81, 83, 0.15);
   border-radius: 6px;
   background: none;
   cursor: pointer;
-  color: #6b6b6b;
+  color: #787878;
+  position: relative;
 }
 
 .notifBtn:hover {
-  background-color: #fafafa;
+  background-color: #F7F7F7;
 }
 
 .userMeta {
@@ -293,7 +296,7 @@
 .userName {
   font-size: 14px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #414141;
   line-height: 1.2;
 }
 
@@ -304,9 +307,8 @@
 
 /* Content */
 .content {
-  padding: 32px;
+  padding: 20px;
   flex: 1;
-  max-width: 960px;
 }
 
 /* Video player */
@@ -366,9 +368,9 @@
 
 .lessonTitle {
   font-size: 24px;
-  font-weight: 600;
-  color: #1a1a1a;
-  letter-spacing: -0.01em;
+  font-weight: 500;
+  color: #414141;
+  letter-spacing: 0.01em;
 }
 
 .saveNoteBtn {
@@ -376,48 +378,48 @@
   align-items: center;
   gap: 8px;
   font-size: 14px;
-  color: #a0a0a0;
+  color: #414141;
   background: none;
   border: none;
   cursor: pointer;
   white-space: nowrap;
-  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  font-family: inherit;
   transition: color 200ms;
   flex-shrink: 0;
 }
 
 .saveNoteBtn:hover {
-  color: #1a1a1a;
+  color: #60A500;
 }
 
 /* Tabs */
 .tabBar {
   display: flex;
-  gap: 0;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 20px;
+  gap: 12px;
+  border-bottom: 0.25px solid #979797;
+  margin-bottom: 16px;
 }
 
 .tabBtn {
-  padding: 12px 16px;
+  padding: 12px 0;
   font-size: 14px;
-  font-weight: 500;
-  color: #a0a0a0;
+  font-weight: 400;
+  color: #BEBEBE;
   background: none;
   border: none;
   cursor: pointer;
   position: relative;
-  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  font-family: inherit;
   transition: color 200ms;
 }
 
 .tabBtn:hover {
-  color: #6b6b6b;
+  color: #787878;
 }
 
 .tabActive {
-  color: #1a1a1a;
-  font-weight: 600;
+  color: #414141;
+  font-weight: 500;
 }
 
 .tabActive::after {
@@ -427,18 +429,18 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #1a1a1a;
+  background-color: #414141;
   border-radius: 1px 1px 0 0;
 }
 
 .tabContent {
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
 .notesText {
-  font-size: 14px;
-  color: #6b6b6b;
-  line-height: 1.75;
+  font-size: 12px;
+  color: #414141;
+  line-height: 1.8;
 }
 
 /* Tablet: collapse sidebar into overlay */
@@ -457,8 +459,7 @@
   }
 
   .content {
-    padding: 20px 16px;
-    max-width: 100%;
+    padding: 16px;
   }
 }
 

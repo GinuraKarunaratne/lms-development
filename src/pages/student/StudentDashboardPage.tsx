@@ -79,7 +79,7 @@ export function StudentDashboardPage() {
           </div>
 
           {/* Continue the journey */}
-          <div style={{ marginTop: 'var(--space-8)' }}>
+          <div style={{ marginTop: '24px' }}>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>Continue the journey</h2>
               <div className={styles.subtitleRow}>

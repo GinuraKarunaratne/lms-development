@@ -9,26 +9,25 @@ import styles from './CourseViewPage.module.css';
 
 function CheckIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-      <circle cx="12" cy="12" r="12" />
-      <polyline points="6 12 10 16 18 8" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <circle cx="7" cy="7" r="7" fill="#99E038" />
+      <path d="M3.5 7.5L5.5 9.5L10.5 4.5" stroke="#414141" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
 
 function CurrentIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-      <circle cx="12" cy="12" r="11" stroke="#22c55e" strokeWidth="2" />
-      <circle cx="12" cy="12" r="5" fill="#22c55e" />
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <circle cx="7" cy="7" r="6.5" stroke="#B4B4B4" />
     </svg>
   );
 }
 
 function PendingIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-      <circle cx="12" cy="12" r="11" stroke="#d1d5db" strokeWidth="2" />
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <circle cx="7" cy="7" r="6.5" stroke="#B4B4B4" />
     </svg>
   );
 }
@@ -70,8 +69,13 @@ export function CourseViewPage() {
             {course.modules.map((mod) => (
               <div key={mod.id} className={styles.moduleGroup}>
                 <div className={styles.moduleHeader}>
-                  <span className={styles.moduleSubtitle}>{mod.subtitle}</span>
-                  <div className={styles.moduleTitle}>{mod.title}</div>
+                  <div>
+                    <span className={styles.moduleSubtitle}>{mod.subtitle}</span>
+                    <div className={styles.moduleTitle}>{mod.title}</div>
+                  </div>
+                  <svg width="10" height="5" viewBox="0 0 10 5" fill="none">
+                    <path d="M0.5 4.5L5 0.5L9.5 4.5" stroke="#787878" strokeMiterlimit="16" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
                 <div className={styles.lessonList}>
                   {mod.lessons.map((lesson) => {
@@ -90,7 +94,11 @@ export function CourseViewPage() {
                         </span>
                         <div className={styles.lessonMeta}>
                           <span className={styles.lessonName}>{lesson.title}</span>
-                          <span className={styles.lessonDuration}>Video · {lesson.duration}</span>
+                          <span className={styles.lessonDuration}>
+                            Video
+                            <svg width="2" height="2" viewBox="0 0 2 2" fill="none"><circle cx="1" cy="1" r="1" fill="#D9D9D9"/></svg>
+                            {lesson.duration}
+                          </span>
                         </div>
                       </button>
                     );
